@@ -1,0 +1,3 @@
+[submodule "Assets/Rook"]
+	path = Assets/Rook
+	url = git@github.com:NikiWalker/Rook.git
