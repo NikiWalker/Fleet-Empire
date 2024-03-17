@@ -18,7 +18,7 @@ public partial struct GoInGameClientSystem : ISystem
     [BurstCompile]
     public void OnCreate(ref SystemState state)
     {
-        state.RequireForUpdate<NetCubeSpawner>();
+        state.RequireForUpdate<GameSettings>();
         var builder = new EntityQueryBuilder(Allocator.Temp)
             .WithAll<NetworkId>()
             .WithNone<NetworkStreamInGame>();
@@ -50,7 +50,7 @@ public partial struct GoInGameServerSystem : ISystem
     [BurstCompile]
     public void OnCreate(ref SystemState state)
     {
-        state.RequireForUpdate<NetCubeSpawner>();
+        state.RequireForUpdate<GameSettings>();
         var builder = new EntityQueryBuilder(Allocator.Temp)
             .WithAll<GoInGameRequest>()
             .WithAll<ReceiveRpcCommandRequest>();
@@ -61,7 +61,7 @@ public partial struct GoInGameServerSystem : ISystem
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
-        var prefab = SystemAPI.GetSingleton<NetCubeSpawner>().Cube;
+        var prefab = SystemAPI.GetSingleton<GameSettings>().Player;
         state.EntityManager.GetName(prefab, out var prefabName);
         var worldName = state.WorldUnmanaged.Name;
 

@@ -1,3 +1,5 @@
+using System;
+using Rook;
 using UnityEngine;
 
 /// <summary>
@@ -8,6 +10,17 @@ public class Game : MonoBehaviour
 {
 	void Awake()
 	{
-		 
+		RookSingleton<Game>.I = this;
+	}
+
+	void OnApplicationPause(bool isPaused)
+	{
+		if(isPaused) 
+			RookPrefs.SaveAnyChanges();
+	}	
+	
+	void OnDestroy()
+	{
+		RookPrefs.SaveAnyChanges();
 	}
 }

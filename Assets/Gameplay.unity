@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &630367069
+--- !u!1 &242018882
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,8 +131,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 630367071}
-  - component: {fileID: 630367070}
+  - component: {fileID: 242018884}
+  - component: {fileID: 242018883}
   m_Layer: 0
   m_Name: GameplaySubScene
   m_TagString: Untagged
@@ -140,20 +140,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &630367070
+--- !u!114 &242018883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630367069}
+  m_GameObject: {fileID: 242018882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 646282347}
+  m_Script: {fileID: 1426789786}
   m_Name: 
   m_EditorClassIdentifier: 
   _SceneAsset: {fileID: 102900000, guid: 4e8cd02ee94d2594e9662954da9b12af, type: 3}
-  _HierarchyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  _HierarchyColor:
+    r: 0.5
+    g: 0.5
+    b: 0.5
+    a: 1
   AutoLoadScene: 1
   _SceneGUID:
     Value:
@@ -161,13 +165,13 @@ MonoBehaviour:
       y: 1230165150
       z: 1167222430
       w: 4196514221
---- !u!4 &630367071
+--- !u!4 &242018884
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630367069}
+  m_GameObject: {fileID: 242018882}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -176,21 +180,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!115 &646282347
-MonoScript:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 7
-  m_DefaultReferences: {}
-  m_Icon: {fileID: 0}
-  m_Type: 0
-  m_ExecutionOrder: 0
-  m_ClassName: SubScene
-  m_Namespace: Unity.Scenes
-  m_AssemblyName: Unity.Scenes
 --- !u!1001 &982360898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -280,37 +269,37 @@ PrefabInstance:
     - target: {fileID: 4657318067819685147, guid: 6d104810b22d2ce4d8e6ad6383cb7708,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 8.68
       objectReference: {fileID: 0}
     - target: {fileID: 4657318067819685147, guid: 6d104810b22d2ce4d8e6ad6383cb7708,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -8.32
       objectReference: {fileID: 0}
     - target: {fileID: 4657318067819685147, guid: 6d104810b22d2ce4d8e6ad6383cb7708,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.93497777
       objectReference: {fileID: 0}
     - target: {fileID: 4657318067819685147, guid: 6d104810b22d2ce4d8e6ad6383cb7708,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.3547063
       objectReference: {fileID: 0}
     - target: {fileID: 4657318067819685147, guid: 6d104810b22d2ce4d8e6ad6383cb7708,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4657318067819685147, guid: 6d104810b22d2ce4d8e6ad6383cb7708,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4657318067819685147, guid: 6d104810b22d2ce4d8e6ad6383cb7708,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 41.551
       objectReference: {fileID: 0}
     - target: {fileID: 4657318067819685147, guid: 6d104810b22d2ce4d8e6ad6383cb7708,
         type: 3}
@@ -327,6 +316,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d104810b22d2ce4d8e6ad6383cb7708, type: 3}
+--- !u!115 &1426789786
+MonoScript:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 7
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_Type: 0
+  m_ExecutionOrder: 0
+  m_ClassName: SubScene
+  m_Namespace: Unity.Scenes
+  m_AssemblyName: Unity.Scenes
 --- !u!1001 &7160701638057403329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -402,4 +406,4 @@ SceneRoots:
   - {fileID: 7160701638057403329}
   - {fileID: 982360898}
   - {fileID: 1335417308}
-  - {fileID: 630367071}
+  - {fileID: 242018884}
