@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &242018882
+--- !u!1 &581647667
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,47 +131,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 242018884}
-  - component: {fileID: 242018883}
+  - component: {fileID: 581647669}
+  - component: {fileID: 581647668}
   m_Layer: 0
-  m_Name: GameplaySubScene
+  m_Name: GameplaySubScene2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &242018883
+--- !u!114 &581647668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 242018882}
+  m_GameObject: {fileID: 581647667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1426789786}
+  m_Script: {fileID: 11500000, guid: 45a335734b1572644a6a5d09d87adc65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _SceneAsset: {fileID: 102900000, guid: 4e8cd02ee94d2594e9662954da9b12af, type: 3}
-  _HierarchyColor:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
+  _SceneAsset: {fileID: 102900000, guid: 5027eefc4e0009849b1ce5a99c3c5f0b, type: 3}
+  _HierarchyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   AutoLoadScene: 1
   _SceneGUID:
     Value:
-      x: 3792554212
-      y: 1230165150
-      z: 1167222430
-      w: 4196514221
---- !u!4 &242018884
+      x: 3488510469
+      y: 1217396964
+      z: 2589901241
+      w: 2968896457
+--- !u!4 &581647669
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 242018882}
+  m_GameObject: {fileID: 581647667}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -316,21 +312,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d104810b22d2ce4d8e6ad6383cb7708, type: 3}
---- !u!115 &1426789786
-MonoScript:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 7
-  m_DefaultReferences: {}
-  m_Icon: {fileID: 0}
-  m_Type: 0
-  m_ExecutionOrder: 0
-  m_ClassName: SubScene
-  m_Namespace: Unity.Scenes
-  m_AssemblyName: Unity.Scenes
 --- !u!1001 &7160701638057403329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,4 +387,4 @@ SceneRoots:
   - {fileID: 7160701638057403329}
   - {fileID: 982360898}
   - {fileID: 1335417308}
-  - {fileID: 242018884}
+  - {fileID: 581647669}
